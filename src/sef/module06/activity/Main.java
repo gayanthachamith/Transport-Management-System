@@ -16,16 +16,16 @@ public class Main {
         transports.add(new Airplane("UL121",820,280));
 
         // Runtime polymorphism
-        for (Transport t : transports) {
+        for (Transport transport : transports) {
 
-            t.showInfo(); // final method
-            t.move();     // overridden method
+            transport.showInfo(); // final method
+            transport.move();     // overridden method
 
             // Safe down-casting (BONUS)
-            if (t instanceof Car) {
-                ((Car) t).honk();
-            } else if (t instanceof Train) {
-                ((Train) t).ringBell();
+            if (transport instanceof Car) {
+                ((Car) transport).honk();
+            } else if (transport instanceof Train) {
+                ((Train) transport).ringBell();
             }
 
             System.out.println("-----");
