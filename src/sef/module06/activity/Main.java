@@ -21,7 +21,7 @@ public class Main {
             transport.showInfo(); // final method
             transport.move();     // overridden method
 
-            // Safe down-casting (BONUS)
+            // Safe down-casting
             if (transport instanceof Car) {
                 ((Car) transport).honk();
             } else if (transport instanceof Train) {
